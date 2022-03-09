@@ -16,7 +16,11 @@
    
 }
 
-
+@media (max-width: 768px) {
+  #navbar-menu {
+    background-color: white;
+  }
+}
 
 
 
