@@ -1,0 +1,1013 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>iPredict</title>
+    <link rel="icon" href="/b1.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="/style.css">
+    <script>
+
+    </script>
+</head>
+
+<body style="background: url('basketball1.jpeg'); background-repeat: no-repeat;  background-size: cover;" id="body-nba">
+
+    <!-- git push heroku HEAD:master -->
+
+    <div class="container-fluid con2">
+        <div class="row">
+            <div class="col-10 mx-auto">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                        <a class="navbar-brand fs-4 fw-bold" href="/">iPredict</a>
+                        <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/console">Home</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/mlb">MLB</a>
+                                </li>
+
+                                <!-- <li class="nav-item">
+                                    <a class="nav-link" href="/nfl">NFL</a>
+                                </li> -->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/ncaa">NCAA</a>
+                                </li>
+                                <!-- <li class="nav-item">
+                                    <a class="nav-link" href="/nba">NBA</a>
+                                </li> -->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/daily">Daily Plays</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/tracker">Tracker</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/contact">Contact</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/blog">Blog</a>
+                                </li>
+
+                                <li class="nav-item px-2">
+                                    <a href="/logout"><button class="btn btn-outline-info rounded-3 fw-semibold">Log
+                                            Out</button></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <section class="main d-flex align-items-center" style="height: 42rem;">
+        <div class="container-fluid" id="main-nba">
+            <div class="row">
+                <div class="col-10 mx-auto nfl-col">
+                    <div class="row">
+                        <div class="col-md-6 d-flex justify-content-center flex-column">
+                            <div class="d-flex justify-content-evenly predict">
+                                <div class="select-nfl">
+                                    <p class="fs-5 fw-semibold text-white para">Away</p>
+                                    <select class="form-select" aria-label="Default select example"
+                                        style="width: 10rem;" id="select1">
+
+                                        <option value="1">Gonzaga</option>
+                                        <option value="2">Toledo</option>
+                                        <option value="3">Alabama</option>
+                                        <option value="4">Arizona</option>
+                                        <option value="5">Oral Roberts</option>
+                                        <option value="6">Xavier</option>
+                                        <option value="7">Tulane</option>
+                                        <option value="8">Youngs St</option>
+                                        <option value="9">Cornell</option>
+                                        <option value="10">Marshall</option>
+                                        <option value="11">UAB</option>
+                                        <option value="12">Col Charlestn</option>
+                                        <option value="13">Marquette</option>
+                                        <option value="14">New Mexico</option>
+                                        <option value="15">Missouri</option>
+                                        <option value="16">Iowa</option>
+                                        <option value="17">Furman</option>
+                                        <option value="18">Memphis</option>
+                                        <option value="19">Texas</option>
+                                        <option value="20">Miami (FL)</option>
+                                        <option value="21">S Utah</option>
+                                        <option value="22">Wright State</option>
+                                        <option value="23">Providence</option>
+                                        <option value="24">NC State</option>
+                                        <option value="25">Baylor</option>
+                                        <option value="26">Wake Forest</option>
+                                        <option value="27">Connecticut</option>
+                                        <option value="28">Indiana St</option>
+                                        <option value="29">Utah State</option>
+                                        <option value="30">Colgate</option>
+                                        <option value="31">N Carolina</option>
+                                        <option value="32">Bryant</option>
+                                        <option value="33">James Mad</option>
+                                        <option value="34">TX A&M-CC</option>
+                                        <option value="35">Ohio</option>
+                                        <option value="36">Queens</option>
+                                        <option value="37">Pepperdine</option>
+                                        <option value="38">TN Martin</option>
+                                        <option value="39">Santa Clara</option>
+                                        <option value="40">San Diego</option>
+                                        <option value="41">Kansas</option>
+                                        <option value="42">Samford</option>
+                                        <option value="43">Detroit</option>
+                                        <option value="44">Rice</option>
+                                        <option value="45">Fla Atlantic</option>
+                                        <option value="46">St Johns</option>
+                                        <option value="47">Pacific</option>
+                                        <option value="48">TX Christian</option>
+                                        <option value="49">F Dickinson</option>
+                                        <option value="50">Creighton</option>
+                                        <option value="51">Cincinnati</option>
+                                        <option value="52">W Virginia</option>
+                                        <option value="53">LA Lafayette</option>
+                                        <option value="54">Mass Lowell</option>
+                                        <option value="55">S Indiana</option>
+                                        <option value="56">Buffalo</option>
+                                        <option value="57">Portland</option>
+                                        <option value="58">Indiana</option>
+                                        <option value="59">Houston</option>
+                                        <option value="60">Princeton</option>
+                                        <option value="61">SE Missouri</option>
+                                        <option value="62">Hsn Christian</option>
+                                        <option value="63">Lg Beach St</option>
+                                        <option value="64">Kansas St</option>
+                                        <option value="65">Geo Wshgtn</option>
+                                        <option value="66">Bowling Grn</option>
+                                        <option value="67">Iona</option>
+                                        <option value="68">E Washingtn</option>
+                                        <option value="69">San Francisco</option>
+                                        <option value="70">Belmont</option>
+                                        <option value="71">Loyola Mymt</option>
+                                        <option value="72">Pittsburgh</option>
+                                        <option value="73">Illinois</option>
+                                        <option value="74">Saint Louis</option>
+                                        <option value="75">SE Louisiana</option>
+                                        <option value="76">Duquesne</option>
+                                        <option value="77">Utah Val St</option>
+                                        <option value="78">VA Tech</option>
+                                        <option value="79">Ball State</option>
+                                        <option value="80">N Florida</option>
+                                        <option value="81">NW State</option>
+                                        <option value="82">TN State</option>
+                                        <option value="83">TX-Pan Am</option>
+                                        <option value="84">Clemson</option>
+                                        <option value="85">AR Lit Rock</option>
+                                        <option value="86">Texas A&M</option>
+                                        <option value="87">Kentucky</option>
+                                        <option value="88">Maryland BC</option>
+                                        <option value="89">WI-Milwkee</option>
+                                        <option value="90">Chattanooga</option>
+                                        <option value="91">Drake</option>
+                                        <option value="92">Kent State</option>
+                                        <option value="93">Arkansas</option>
+                                        <option value="94">U Penn</option>
+                                        <option value="95">Stetson</option>
+                                        <option value="96">UCLA</option>
+                                        <option value="97">Norfolk St</option>
+                                        <option value="98">Texas Tech</option>
+                                        <option value="99">UC Irvine</option>
+                                        <option value="100">Syracuse</option>
+                                        <option value="101">Kennesaw St</option>
+                                        <option value="102">Ste F Austin</option>
+                                        <option value="103">Yale</option>
+                                        <option value="104">Lipscomb</option>
+                                        <option value="105">BYU</option>
+                                        <option value="106">Purdue</option>
+                                        <option value="107">Michigan</option>
+                                        <option value="108">N Alabama</option>
+                                        <option value="109">S Mississippi</option>
+                                        <option value="110">UNLV</option>
+                                        <option value="111">Penn State</option>
+                                        <option value="112">Portland St</option>
+                                        <option value="113">UC Davis</option>
+                                        <option value="114">St. Thomas</option>
+                                        <option value="115">Hofstra</option>
+                                        <option value="116">Ohio State</option>
+                                        <option value="117">S Florida</option>
+                                        <option value="118">Utah Tech</option>
+                                        <option value="119">S Car State</option>
+                                        <option value="120">Howard</option>
+                                        <option value="121">Nicholls St</option>
+                                        <option value="122">Oakland</option>
+                                        <option value="123">Coppin State</option>
+                                        <option value="124">USC</option>
+                                        <option value="125">E Michigan</option>
+                                        <option value="126">San Diego St</option>
+                                        <option value="127">NC-Asheville</option>
+                                        <option value="128">E Kentucky</option>
+                                        <option value="129">N Colorado</option>
+                                        <option value="130">High Point</option>
+                                        <option value="131">SIU Edward</option>
+                                        <option value="132">Auburn</option>
+                                        <option value="133">Nevada</option>
+                                        <option value="134">Liberty</option>
+                                        <option value="135">Akron</option>
+                                        <option value="136">Central Ark</option>
+                                        <option value="137">St Josephs</option>
+                                        <option value="138">Quinnipiac</option>
+                                        <option value="139">Central FL</option>
+                                        <option value="140">Fordham</option>
+                                        <option value="141">Abl Christian</option>
+                                        <option value="142">Wofford</option>
+                                        <option value="143">N Dakota St</option>
+                                        <option value="144">Colorado St</option>
+                                        <option value="145">Denver</option>
+                                        <option value="146">W Kentucky</option>
+                                        <option value="147">Miami (OH)</option>
+                                        <option value="148">Winthrop</option>
+                                        <option value="149">Tennessee</option>
+                                        <option value="150">Towson</option>
+                                        <option value="151">Duke</option>
+                                        <option value="152">Florida</option>
+                                        <option value="153">LA Tech</option>
+                                        <option value="154">DePaul</option>
+                                        <option value="155">Boise State</option>
+                                        <option value="156">Middle Tenn</option>
+                                        <option value="157">Southern</option>
+                                        <option value="158">St Fran (PA)</option>
+                                        <option value="159">N Mex State</option>
+                                        <option value="160">Vanderbilt</option>
+                                        <option value="161">New Orleans</option>
+                                        <option value="162">Idaho</option>
+                                        <option value="163">Army</option>
+                                        <option value="164">St Marys</option>
+                                        <option value="165">U Mass</option>
+                                        <option value="166">Grd Canyon</option>
+                                        <option value="167">Longwood</option>
+                                        <option value="168">W Illinois</option>
+                                        <option value="169">TN Tech</option>
+                                        <option value="170">Vermont</option>
+                                        <option value="171">UC Riverside</option>
+                                        <option value="172">Cleveland St</option>
+                                        <option value="173">W Carolina</option>
+                                        <option value="174">Georgetown</option>
+                                        <option value="175">Colorado</option>
+                                        <option value="176">IPFW</option>
+                                        <option value="177">Arizona St</option>
+                                        <option value="178">S Dakota St</option>
+                                        <option value="179">NC Central</option>
+                                        <option value="180">Oregon</option>
+                                        <option value="181">S Methodist</option>
+                                        <option value="182">Bradley</option>
+                                        <option value="183">Maryland</option>
+                                        <option value="184">Sacred Hrt</option>
+                                        <option value="185">Florida Intl</option>
+                                        <option value="186">N Illinois</option>
+                                        <option value="187">Seattle</option>
+                                        <option value="188">Charl South</option>
+                                        <option value="189">Fla Gulf Cst</option>
+                                        <option value="190">Notre Dame</option>
+                                        <option value="191">NC-Grnsboro</option>
+                                        <option value="192">Coastal Car</option>
+                                        <option value="193">N Arizona</option>
+                                        <option value="194">Wichita St</option>
+                                        <option value="195">Davidson</option>
+                                        <option value="196">Rider</option>
+                                        <option value="197">VCU</option>
+                                        <option value="198">Utah</option>
+                                        <option value="199">UCSB</option>
+                                        <option value="200">E Carolina</option>
+                                        <option value="201">Montana St</option>
+                                        <option value="202">Geo Mason</option>
+                                        <option value="203">Rutgers</option>
+                                        <option value="204">Temple</option>
+                                        <option value="205">Oklahoma St</option>
+                                        <option value="206">Richmond</option>
+                                        <option value="207">Florida St</option>
+                                        <option value="208">Navy</option>
+                                        <option value="209">Murray St</option>
+                                        <option value="210">Iowa State</option>
+                                        <option value="211">S Alabama</option>
+                                        <option value="212">Villanova</option>
+                                        <option value="213">Georgia</option>
+                                        <option value="214">Canisius</option>
+                                        <option value="215">North Dakota</option>
+                                        <option value="216">La Salle</option>
+                                        <option value="217">Delaware</option>
+                                        <option value="218">Sam Hous St</option>
+                                        <option value="219">Troy</option>
+                                        <option value="220">Stanford</option>
+                                        <option value="221">Alab A&M</option>
+                                        <option value="222">Siena</option>
+                                        <option value="223">Virginia</option>
+                                        <option value="224">TX A&M-Com</option>
+                                        <option value="225">Morgan St</option>
+                                        <option value="226">Dayton</option>
+                                        <option value="227">N Iowa</option>
+                                        <option value="228">Washington</option>
+                                        <option value="229">Montana</option>
+                                        <option value="230">Brown</option>
+                                        <option value="231">W Michigan</option>
+                                        <option value="232">Valparaiso</option>
+                                        <option value="233">Northwestern</option>
+                                        <option value="234">Oklahoma</option>
+                                        <option value="235">Wyoming</option>
+                                        <option value="236">Radford</option>
+                                        <option value="237">Lehigh</option>
+                                        <option value="238">Idaho State</option>
+                                        <option value="239">E Tenn St</option>
+                                        <option value="240">Incar Word</option>
+                                        <option value="241">NC A&T</option>
+                                        <option value="242">Michigan St</option>
+                                        <option value="243">Binghamton</option>
+                                        <option value="244">Harvard</option>
+                                        <option value="245">CS Fullerton</option>
+                                        <option value="246">TX-San Ant</option>
+                                        <option value="247">Jackson St</option>
+                                        <option value="248">Neb Omaha</option>
+                                        <option value="249">Seton Hall</option>
+                                        <option value="250">Dartmouth</option>
+                                        <option value="251">Old Dominion</option>
+                                        <option value="252">San Jose St</option>
+                                        <option value="253">Alcorn State</option>
+                                        <option value="254">Cal Baptist</option>
+                                        <option value="255">Air Force</option>
+                                        <option value="256">Wash State</option>
+                                        <option value="257">Citadel</option>
+                                        <option value="258">TX Southern</option>
+                                        <option value="259">South Dakota</option>
+                                        <option value="260">Manhattan</option>
+                                        <option value="261">Gard-Webb</option>
+                                        <option value="262">GA Southern</option>
+                                        <option value="263">SC Upstate</option>
+                                        <option value="264">Campbell</option>
+                                        <option value="265">Mississippi</option>
+                                        <option value="266">E Illinois</option>
+                                        <option value="267">Maine</option>
+                                        <option value="268">Hawaii</option>
+                                        <option value="269">Illinois St</option>
+                                        <option value="270">Nebraska</option>
+                                        <option value="271">Grambling St</option>
+                                        <option value="272">Stonehill</option>
+                                        <option value="273">NC-Wilmgton</option>
+                                        <option value="274">Hampton</option>
+                                        <option value="275">St Bonavent</option>
+                                        <option value="276">Loyola-Chi</option>
+                                        <option value="277">Beth-Cook</option>
+                                        <option value="278">NJIT</option>
+                                        <option value="279">GA Tech</option>
+                                        <option value="280">Maryland ES</option>
+                                        <option value="281">Tulsa</option>
+                                        <option value="282">Rob Morris</option>
+                                        <option value="283">IL-Chicago</option>
+                                        <option value="284">LSU</option>
+                                        <option value="285">Morehead St</option>
+                                        <option value="286">Boston Col</option>
+                                        <option value="287">Chicago St</option>
+                                        <option value="288">TX El Paso</option>
+                                        <option value="289">Central Conn</option>
+                                        <option value="290">McNeese St</option>
+                                        <option value="291">Tarleton State</option>
+                                        <option value="292">Mercer</option>
+                                        <option value="293">N Kentucky</option>
+                                        <option value="294">Bucknell</option>
+                                        <option value="295">Lamar</option>
+                                        <option value="296">Northeastrn</option>
+                                        <option value="297">Boston U</option>
+                                        <option value="298">Albany</option>
+                                        <option value="299">Sac State</option>
+                                        <option value="300">Charlotte</option>
+                                        <option value="301">UC San Diego</option>
+                                        <option value="302">Butler</option>
+                                        <option value="303">Miss State</option>
+                                        <option value="304">Drexel</option>
+                                        <option value="305">Prairie View</option>
+                                        <option value="306">Rhode Island</option>
+                                        <option value="307">American</option>
+                                        <option value="308">App State</option>
+                                        <option value="309">Ark Pine Bl</option>
+                                        <option value="310">Central Mich</option>
+                                        <option value="311">Lindenwood</option>
+                                        <option value="312">S Illinois</option>
+                                        <option value="313">Georgia St</option>
+                                        <option value="314">Holy Cross</option>
+                                        <option value="315">Jksnville St</option>
+                                        <option value="316">Weber State</option>
+                                        <option value="317">N Hampshire</option>
+                                        <option value="318">S Carolina</option>
+                                        <option value="319">Elon</option>
+                                        <option value="320">Columbia</option>
+                                        <option value="321">Wm & Mary</option>
+                                        <option value="322">VA Military</option>
+                                        <option value="323">Wisconsin</option>
+                                        <option value="324">Missouri St</option>
+                                        <option value="325">Louisville</option>
+                                        <option value="326">Texas State</option>
+                                        <option value="327">UMKC</option>
+                                        <option value="328">North Texas</option>
+                                        <option value="329">IUPUI</option>
+                                        <option value="330">Fairfield</option>
+                                        <option value="331">Loyola-MD</option>
+                                        <option value="332">Austin Peay</option>
+                                        <option value="333">LIU</option>
+                                        <option value="334">Alabama St</option>
+                                        <option value="335">Mt St Marys</option>
+                                        <option value="336">Niagara</option>
+                                        <option value="337">LA Monroe</option>
+                                        <option value="338">Bellarmine</option>
+                                        <option value="339">Arkansas St</option>
+                                        <option value="340">Evansville</option>
+                                        <option value="341">Marist</option>
+                                        <option value="342">Delaware St</option>
+                                        <option value="343">Presbyterian</option>
+                                        <option value="344">St Fran (NY)</option>
+                                        <option value="345">TX-Arlington</option>
+                                        <option value="346">Wagner</option>
+                                        <option value="347">Stony Brook</option>
+                                        <option value="348">Jacksonville</option>
+                                        <option value="349">Minnesota</option>
+                                        <option value="350">Lafayette</option>
+                                        <option value="351">Fresno St</option>
+                                        <option value="352">Cal St Nrdge</option>
+                                        <option value="353">Miss Val St</option>
+                                        <option value="354">Monmouth</option>
+                                        <option value="355">CS Bakersfld</option>
+                                        <option value="356">Oregon St</option>
+                                        <option value="357">St Peters</option>
+                                        <option value="358">Hartford</option>
+                                        <option value="359">Merrimack</option>
+                                        <option value="360">WI-Grn Bay</option>
+                                        <option value="361">California</option>
+                                        <option value="362">Cal Poly</option>
+                                        <option value="363">Florida A&M</option>
+                                        
+
+                                    </select>
+                                </div>
+
+                                <div class="select-nfl">
+                                    <p class="fs-5 fw-semibold text-white para">Home</p>
+                                    <select class="form-select" aria-label="Default select example"
+                                        style="width: 10rem;" id="select2">
+
+                                        <option value="1">Gonzaga</option>
+                                        <option value="2">Toledo</option>
+                                        <option value="3">Alabama</option>
+                                        <option value="4">Arizona</option>
+                                        <option value="5">Oral Roberts</option>
+                                        <option value="6">Xavier</option>
+                                        <option value="7">Tulane</option>
+                                        <option value="8">Youngs St</option>
+                                        <option value="9">Cornell</option>
+                                        <option value="10">Marshall</option>
+                                        <option value="11">UAB</option>
+                                        <option value="12">Col Charlestn</option>
+                                        <option value="13">Marquette</option>
+                                        <option value="14">New Mexico</option>
+                                        <option value="15">Missouri</option>
+                                        <option value="16">Iowa</option>
+                                        <option value="17">Furman</option>
+                                        <option value="18">Memphis</option>
+                                        <option value="19">Texas</option>
+                                        <option value="20">Miami (FL)</option>
+                                        <option value="21">S Utah</option>
+                                        <option value="22">Wright State</option>
+                                        <option value="23">Providence</option>
+                                        <option value="24">NC State</option>
+                                        <option value="25">Baylor</option>
+                                        <option value="26">Wake Forest</option>
+                                        <option value="27">Connecticut</option>
+                                        <option value="28">Indiana St</option>
+                                        <option value="29">Utah State</option>
+                                        <option value="30">Colgate</option>
+                                        <option value="31">N Carolina</option>
+                                        <option value="32">Bryant</option>
+                                        <option value="33">James Mad</option>
+                                        <option value="34">TX A&M-CC</option>
+                                        <option value="35">Ohio</option>
+                                        <option value="36">Queens</option>
+                                        <option value="37">Pepperdine</option>
+                                        <option value="38">TN Martin</option>
+                                        <option value="39">Santa Clara</option>
+                                        <option value="40">San Diego</option>
+                                        <option value="41">Kansas</option>
+                                        <option value="42">Samford</option>
+                                        <option value="43">Detroit</option>
+                                        <option value="44">Rice</option>
+                                        <option value="45">Fla Atlantic</option>
+                                        <option value="46">St Johns</option>
+                                        <option value="47">Pacific</option>
+                                        <option value="48">TX Christian</option>
+                                        <option value="49">F Dickinson</option>
+                                        <option value="50">Creighton</option>
+                                        <option value="51">Cincinnati</option>
+                                        <option value="52">W Virginia</option>
+                                        <option value="53">LA Lafayette</option>
+                                        <option value="54">Mass Lowell</option>
+                                        <option value="55">S Indiana</option>
+                                        <option value="56">Buffalo</option>
+                                        <option value="57">Portland</option>
+                                        <option value="58">Indiana</option>
+                                        <option value="59">Houston</option>
+                                        <option value="60">Princeton</option>
+                                        <option value="61">SE Missouri</option>
+                                        <option value="62">Hsn Christian</option>
+                                        <option value="63">Lg Beach St</option>
+                                        <option value="64">Kansas St</option>
+                                        <option value="65">Geo Wshgtn</option>
+                                        <option value="66">Bowling Grn</option>
+                                        <option value="67">Iona</option>
+                                        <option value="68">E Washingtn</option>
+                                        <option value="69">San Francisco</option>
+                                        <option value="70">Belmont</option>
+                                        <option value="71">Loyola Mymt</option>
+                                        <option value="72">Pittsburgh</option>
+                                        <option value="73">Illinois</option>
+                                        <option value="74">Saint Louis</option>
+                                        <option value="75">SE Louisiana</option>
+                                        <option value="76">Duquesne</option>
+                                        <option value="77">Utah Val St</option>
+                                        <option value="78">VA Tech</option>
+                                        <option value="79">Ball State</option>
+                                        <option value="80">N Florida</option>
+                                        <option value="81">NW State</option>
+                                        <option value="82">TN State</option>
+                                        <option value="83">TX-Pan Am</option>
+                                        <option value="84">Clemson</option>
+                                        <option value="85">AR Lit Rock</option>
+                                        <option value="86">Texas A&M</option>
+                                        <option value="87">Kentucky</option>
+                                        <option value="88">Maryland BC</option>
+                                        <option value="89">WI-Milwkee</option>
+                                        <option value="90">Chattanooga</option>
+                                        <option value="91">Drake</option>
+                                        <option value="92">Kent State</option>
+                                        <option value="93">Arkansas</option>
+                                        <option value="94">U Penn</option>
+                                        <option value="95">Stetson</option>
+                                        <option value="96">UCLA</option>
+                                        <option value="97">Norfolk St</option>
+                                        <option value="98">Texas Tech</option>
+                                        <option value="99">UC Irvine</option>
+                                        <option value="100">Syracuse</option>
+                                        <option value="101">Kennesaw St</option>
+                                        <option value="102">Ste F Austin</option>
+                                        <option value="103">Yale</option>
+                                        <option value="104">Lipscomb</option>
+                                        <option value="105">BYU</option>
+                                        <option value="106">Purdue</option>
+                                        <option value="107">Michigan</option>
+                                        <option value="108">N Alabama</option>
+                                        <option value="109">S Mississippi</option>
+                                        <option value="110">UNLV</option>
+                                        <option value="111">Penn State</option>
+                                        <option value="112">Portland St</option>
+                                        <option value="113">UC Davis</option>
+                                        <option value="114">St. Thomas</option>
+                                        <option value="115">Hofstra</option>
+                                        <option value="116">Ohio State</option>
+                                        <option value="117">S Florida</option>
+                                        <option value="118">Utah Tech</option>
+                                        <option value="119">S Car State</option>
+                                        <option value="120">Howard</option>
+                                        <option value="121">Nicholls St</option>
+                                        <option value="122">Oakland</option>
+                                        <option value="123">Coppin State</option>
+                                        <option value="124">USC</option>
+                                        <option value="125">E Michigan</option>
+                                        <option value="126">San Diego St</option>
+                                        <option value="127">NC-Asheville</option>
+                                        <option value="128">E Kentucky</option>
+                                        <option value="129">N Colorado</option>
+                                        <option value="130">High Point</option>
+                                        <option value="131">SIU Edward</option>
+                                        <option value="132">Auburn</option>
+                                        <option value="133">Nevada</option>
+                                        <option value="134">Liberty</option>
+                                        <option value="135">Akron</option>
+                                        <option value="136">Central Ark</option>
+                                        <option value="137">St Josephs</option>
+                                        <option value="138">Quinnipiac</option>
+                                        <option value="139">Central FL</option>
+                                        <option value="140">Fordham</option>
+                                        <option value="141">Abl Christian</option>
+                                        <option value="142">Wofford</option>
+                                        <option value="143">N Dakota St</option>
+                                        <option value="144">Colorado St</option>
+                                        <option value="145">Denver</option>
+                                        <option value="146">W Kentucky</option>
+                                        <option value="147">Miami (OH)</option>
+                                        <option value="148">Winthrop</option>
+                                        <option value="149">Tennessee</option>
+                                        <option value="150">Towson</option>
+                                        <option value="151">Duke</option>
+                                        <option value="152">Florida</option>
+                                        <option value="153">LA Tech</option>
+                                        <option value="154">DePaul</option>
+                                        <option value="155">Boise State</option>
+                                        <option value="156">Middle Tenn</option>
+                                        <option value="157">Southern</option>
+                                        <option value="158">St Fran (PA)</option>
+                                        <option value="159">N Mex State</option>
+                                        <option value="160">Vanderbilt</option>
+                                        <option value="161">New Orleans</option>
+                                        <option value="162">Idaho</option>
+                                        <option value="163">Army</option>
+                                        <option value="164">St Marys</option>
+                                        <option value="165">U Mass</option>
+                                        <option value="166">Grd Canyon</option>
+                                        <option value="167">Longwood</option>
+                                        <option value="168">W Illinois</option>
+                                        <option value="169">TN Tech</option>
+                                        <option value="170">Vermont</option>
+                                        <option value="171">UC Riverside</option>
+                                        <option value="172">Cleveland St</option>
+                                        <option value="173">W Carolina</option>
+                                        <option value="174">Georgetown</option>
+                                        <option value="175">Colorado</option>
+                                        <option value="176">IPFW</option>
+                                        <option value="177">Arizona St</option>
+                                        <option value="178">S Dakota St</option>
+                                        <option value="179">NC Central</option>
+                                        <option value="180">Oregon</option>
+                                        <option value="181">S Methodist</option>
+                                        <option value="182">Bradley</option>
+                                        <option value="183">Maryland</option>
+                                        <option value="184">Sacred Hrt</option>
+                                        <option value="185">Florida Intl</option>
+                                        <option value="186">N Illinois</option>
+                                        <option value="187">Seattle</option>
+                                        <option value="188">Charl South</option>
+                                        <option value="189">Fla Gulf Cst</option>
+                                        <option value="190">Notre Dame</option>
+                                        <option value="191">NC-Grnsboro</option>
+                                        <option value="192">Coastal Car</option>
+                                        <option value="193">N Arizona</option>
+                                        <option value="194">Wichita St</option>
+                                        <option value="195">Davidson</option>
+                                        <option value="196">Rider</option>
+                                        <option value="197">VCU</option>
+                                        <option value="198">Utah</option>
+                                        <option value="199">UCSB</option>
+                                        <option value="200">E Carolina</option>
+                                        <option value="201">Montana St</option>
+                                        <option value="202">Geo Mason</option>
+                                        <option value="203">Rutgers</option>
+                                        <option value="204">Temple</option>
+                                        <option value="205">Oklahoma St</option>
+                                        <option value="206">Richmond</option>
+                                        <option value="207">Florida St</option>
+                                        <option value="208">Navy</option>
+                                        <option value="209">Murray St</option>
+                                        <option value="210">Iowa State</option>
+                                        <option value="211">S Alabama</option>
+                                        <option value="212">Villanova</option>
+                                        <option value="213">Georgia</option>
+                                        <option value="214">Canisius</option>
+                                        <option value="215">North Dakota</option>
+                                        <option value="216">La Salle</option>
+                                        <option value="217">Delaware</option>
+                                        <option value="218">Sam Hous St</option>
+                                        <option value="219">Troy</option>
+                                        <option value="220">Stanford</option>
+                                        <option value="221">Alab A&M</option>
+                                        <option value="222">Siena</option>
+                                        <option value="223">Virginia</option>
+                                        <option value="224">TX A&M-Com</option>
+                                        <option value="225">Morgan St</option>
+                                        <option value="226">Dayton</option>
+                                        <option value="227">N Iowa</option>
+                                        <option value="228">Washington</option>
+                                        <option value="229">Montana</option>
+                                        <option value="230">Brown</option>
+                                        <option value="231">W Michigan</option>
+                                        <option value="232">Valparaiso</option>
+                                        <option value="233">Northwestern</option>
+                                        <option value="234">Oklahoma</option>
+                                        <option value="235">Wyoming</option>
+                                        <option value="236">Radford</option>
+                                        <option value="237">Lehigh</option>
+                                        <option value="238">Idaho State</option>
+                                        <option value="239">E Tenn St</option>
+                                        <option value="240">Incar Word</option>
+                                        <option value="241">NC A&T</option>
+                                        <option value="242">Michigan St</option>
+                                        <option value="243">Binghamton</option>
+                                        <option value="244">Harvard</option>
+                                        <option value="245">CS Fullerton</option>
+                                        <option value="246">TX-San Ant</option>
+                                        <option value="247">Jackson St</option>
+                                        <option value="248">Neb Omaha</option>
+                                        <option value="249">Seton Hall</option>
+                                        <option value="250">Dartmouth</option>
+                                        <option value="251">Old Dominion</option>
+                                        <option value="252">San Jose St</option>
+                                        <option value="253">Alcorn State</option>
+                                        <option value="254">Cal Baptist</option>
+                                        <option value="255">Air Force</option>
+                                        <option value="256">Wash State</option>
+                                        <option value="257">Citadel</option>
+                                        <option value="258">TX Southern</option>
+                                        <option value="259">South Dakota</option>
+                                        <option value="260">Manhattan</option>
+                                        <option value="261">Gard-Webb</option>
+                                        <option value="262">GA Southern</option>
+                                        <option value="263">SC Upstate</option>
+                                        <option value="264">Campbell</option>
+                                        <option value="265">Mississippi</option>
+                                        <option value="266">E Illinois</option>
+                                        <option value="267">Maine</option>
+                                        <option value="268">Hawaii</option>
+                                        <option value="269">Illinois St</option>
+                                        <option value="270">Nebraska</option>
+                                        <option value="271">Grambling St</option>
+                                        <option value="272">Stonehill</option>
+                                        <option value="273">NC-Wilmgton</option>
+                                        <option value="274">Hampton</option>
+                                        <option value="275">St Bonavent</option>
+                                        <option value="276">Loyola-Chi</option>
+                                        <option value="277">Beth-Cook</option>
+                                        <option value="278">NJIT</option>
+                                        <option value="279">GA Tech</option>
+                                        <option value="280">Maryland ES</option>
+                                        <option value="281">Tulsa</option>
+                                        <option value="282">Rob Morris</option>
+                                        <option value="283">IL-Chicago</option>
+                                        <option value="284">LSU</option>
+                                        <option value="285">Morehead St</option>
+                                        <option value="286">Boston Col</option>
+                                        <option value="287">Chicago St</option>
+                                        <option value="288">TX El Paso</option>
+                                        <option value="289">Central Conn</option>
+                                        <option value="290">McNeese St</option>
+                                        <option value="291">Tarleton State</option>
+                                        <option value="292">Mercer</option>
+                                        <option value="293">N Kentucky</option>
+                                        <option value="294">Bucknell</option>
+                                        <option value="295">Lamar</option>
+                                        <option value="296">Northeastrn</option>
+                                        <option value="297">Boston U</option>
+                                        <option value="298">Albany</option>
+                                        <option value="299">Sac State</option>
+                                        <option value="300">Charlotte</option>
+                                        <option value="301">UC San Diego</option>
+                                        <option value="302">Butler</option>
+                                        <option value="303">Miss State</option>
+                                        <option value="304">Drexel</option>
+                                        <option value="305">Prairie View</option>
+                                        <option value="306">Rhode Island</option>
+                                        <option value="307">American</option>
+                                        <option value="308">App State</option>
+                                        <option value="309">Ark Pine Bl</option>
+                                        <option value="310">Central Mich</option>
+                                        <option value="311">Lindenwood</option>
+                                        <option value="312">S Illinois</option>
+                                        <option value="313">Georgia St</option>
+                                        <option value="314">Holy Cross</option>
+                                        <option value="315">Jksnville St</option>
+                                        <option value="316">Weber State</option>
+                                        <option value="317">N Hampshire</option>
+                                        <option value="318">S Carolina</option>
+                                        <option value="319">Elon</option>
+                                        <option value="320">Columbia</option>
+                                        <option value="321">Wm & Mary</option>
+                                        <option value="322">VA Military</option>
+                                        <option value="323">Wisconsin</option>
+                                        <option value="324">Missouri St</option>
+                                        <option value="325">Louisville</option>
+                                        <option value="326">Texas State</option>
+                                        <option value="327">UMKC</option>
+                                        <option value="328">North Texas</option>
+                                        <option value="329">IUPUI</option>
+                                        <option value="330">Fairfield</option>
+                                        <option value="331">Loyola-MD</option>
+                                        <option value="332">Austin Peay</option>
+                                        <option value="333">LIU</option>
+                                        <option value="334">Alabama St</option>
+                                        <option value="335">Mt St Marys</option>
+                                        <option value="336">Niagara</option>
+                                        <option value="337">LA Monroe</option>
+                                        <option value="338">Bellarmine</option>
+                                        <option value="339">Arkansas St</option>
+                                        <option value="340">Evansville</option>
+                                        <option value="341">Marist</option>
+                                        <option value="342">Delaware St</option>
+                                        <option value="343">Presbyterian</option>
+                                        <option value="344">St Fran (NY)</option>
+                                        <option value="345">TX-Arlington</option>
+                                        <option value="346">Wagner</option>
+                                        <option value="347">Stony Brook</option>
+                                        <option value="348">Jacksonville</option>
+                                        <option value="349">Minnesota</option>
+                                        <option value="350">Lafayette</option>
+                                        <option value="351">Fresno St</option>
+                                        <option value="352">Cal St Nrdge</option>
+                                        <option value="353">Miss Val St</option>
+                                        <option value="354">Monmouth</option>
+                                        <option value="355">CS Bakersfld</option>
+                                        <option value="356">Oregon St</option>
+                                        <option value="357">St Peters</option>
+                                        <option value="358">Hartford</option>
+                                        <option value="359">Merrimack</option>
+                                        <option value="360">WI-Grn Bay</option>
+                                        <option value="361">California</option>
+                                        <option value="362">Cal Poly</option>
+                                        <option value="363">Florida A&M</option>
+                                        
+                                    </select>
+                                </div>
+                                <div class="d-flex align-items-end btn-nfl">
+                                    <button class="btn btn-info text-white rounded-5 fw-semibold" onclick="predict()"
+                                        id="sohan">Predict</button>
+                                </div>
+                            </div>
+                            <div class="my-5">
+
+                                <p class="fs-5 fw-semibold text-center text-white">
+                                    Enter Values
+                                </p>
+
+                                <table class="table table-light table-striped table-hover">
+                                    <!-- <thead class="">
+                                        <tr class="text-white">
+                                            <th scope="col">Prediction Table</th>
+
+                                        </tr>
+                                    </thead> -->
+                                    <thead>
+                                        <tr class="text-center">
+                                            <th scope="col"></th>
+                                            <th scope="col"></th>
+                                            <th scope="col">Away</th>
+                                            <th scope="col">Home</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+
+                                        <tr class="">
+
+                                            <td>Team totals from any book</td>
+                                            <td></td>
+                                            <td><input type="text" class="form-control" id="ps1" placeholder=""></td>
+                                            <td><input type="text" class="form-control" id="ps2" placeholder=""></td>
+
+                                        </tr>
+                                        <!-- <tr class="">
+
+                                            <td>Over Under</td>
+                                            <td></td>
+                                            <td><input type="text" class="form-control" id="ou1" placeholder=""></td>
+                                            <td><input type="text" class="form-control" id="ou2" placeholder=""></td>
+
+                                        </tr> -->
+                                        <!-- <tr class="">
+
+                                            <td>Projected score</td>
+                                            <td></td>
+                                            <td><input type="text" class="form-control" id="pjs1" placeholder=""></td>
+                                            <td><input type="text" class="form-control" id="pjs2" placeholder=""></td> -->
+
+                                    </tbody>
+                                </table>
+                                <div class="text-center">
+                                    <p class="text-white fw-semibold" style="display: none;" id="error">Error...</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-6">
+                            <div class="mx-1">
+                                <div class="mt-4">
+                                    <p class="fs-5 fw-semibold text-center text-white">
+                                        Prediction Table
+                                    </p>
+                                </div>
+                                <table class="table table-light table-striped table-hover">
+                                    <!-- <thead class="">
+                                        <tr class="text-white">
+                                            <th scope="col">Prediction Table</th>
+
+                                        </tr>
+                                    </thead> -->
+                                    <thead>
+                                        <tr>
+                                            <th scope="col"></th>
+                                            <th scope="col"></th>
+                                            <th scope="col"></th>
+                                            <th scope="col"></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="">
+
+                                            <td>Spread Projected</td>
+                                            <td id="a"></td>
+                                            <td id="a1"></td>
+                                            <td id="b1"></td>
+
+                                        </tr>
+                                        <tr class="">
+
+                                            <td>Total Projected</td>
+                                            <td id="b"></td>
+                                            <td id="a2"></td>
+                                            <td id="b2"></td>
+
+                                        </tr>
+                                        <tr class="">
+
+                                            <td>Away total</td>
+                                            <td id="c"></td>
+                                            <td id="a3"></td>
+                                            <td id="b3"></td>
+
+                                        </tr>
+                                        <tr class="">
+
+                                            <td>Home total</td>
+                                            <td id="d"></td>
+                                            <td id="a4"></td>
+                                            <td id="b4"></td>
+
+                                        </tr>
+                                    
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+    <script>
+        function predict() {
+            document.getElementById("error").style.display = "none";
+            var e1 = document.getElementById("select1");
+            var value1 = e1.value;
+            var away = e1.options[e1.selectedIndex].text;
+
+
+            var e2 = document.getElementById("select2");
+            var value2 = e2.value;
+            var home = e2.options[e2.selectedIndex].text;
+
+
+
+
+            let away_point_spread = document.getElementById("ps1").value
+            let home_point_spread = document.getElementById("ps2").value
+       
+
+            if (away_point_spread == '' || home_point_spread == '' ) {
+                document.getElementById("error").innerHTML = "Please enter all the fields !!! ";
+                document.getElementById("error").style.display = "block";
+                return;
+            }
+            document.getElementById("sohan").innerHTML = "Predicting..."
+
+
+            fetch("/ncaa", { method: "POST", headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ away, home,  away_point_spread,  home_point_spread}) }).then((res) => {
+                return res.json();
+            }).then((fres) => {
+                if (fres.code == 404) {
+                    alert("Some Error Occured !!!")
+                }
+                else {
+                    document.getElementById("sohan").innerHTML = "Predict"
+                    let a = fres.message
+                     
+                     document.getElementById("a").innerHTML = a[0]
+                     document.getElementById("b").innerHTML = a[1]
+                     document.getElementById("c").innerHTML = a[2]
+                     document.getElementById("d").innerHTML = a[3]
+
+
+
+                }
+            })
+
+
+
+        }
+        document.getElementById("sohan").innerHTML = "Predict"
+    </script>
+</body>
+
+</html>

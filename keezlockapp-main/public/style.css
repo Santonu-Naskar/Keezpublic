@@ -1,0 +1,310 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish&family=Poppins:wght@200&display=swap");
+
+* {
+  font-family: "Mulish", sans-serif;
+  /* background-color: var(--bg-color); */
+}
+
+body {
+  background-color: black;
+}
+
+#root {
+  background-color: var(--bg-color);
+}
+
+/* ------------------- Navbar ------------------- */
+
+.light-theme {
+  --bg-color: white;
+}
+
+.dark-theme {
+  --bg-color: black;
+  --nav-color: white;
+  --footer-bg: white;
+}
+
+.navbar-brand {
+  color: white !important;
+}
+
+.nav-link {
+  color: white !important;
+}
+
+.nav-link:hover {
+  color: rgb(52, 152, 219) !important;
+}
+
+.active {
+  font-weight: bold !important;
+  border-bottom: 2px solid rgb(86, 83, 135) !important;
+}
+
+/* --------------- Homepage ------------ */
+
+.main {
+  width: 100%;
+  height: 80vh;
+}
+
+.tech {
+  color: rgb(33, 150, 192);
+}
+
+.btn:hover {
+  background-color: #3cc4df !important;
+  color: white !important;
+}
+
+.animated {
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+@keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+/* .wrapper {
+  height: 2rem;
+  display: grid;
+  place-items: center;
+} */
+
+.typing-demo {
+  width: 12ch;
+  animation: typing 2s steps(15), blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-size: 1em;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+/* ------------------- Services Page ------------------- */
+
+.card:hover {
+  transform: scale(1.05, 1.05);
+}
+
+.btn_style:hover {
+  background-color: #3cc4df;
+  color: white;
+}
+
+.img_wrap {
+  overflow: hidden;
+}
+
+.card {
+  overflow: hidden;
+}
+
+/* ------------------ Preloader ------------------ */
+.container {
+  width: 100%;
+  height: 90vh;
+}
+
+@media only screen and (min-width: 400px) and (max-width: 500px) {
+  .animated-img {
+    height: 20rem;
+    display: flex;
+    align-items: center;
+  }
+
+  #main-section {
+    height: 89vh;
+  }
+
+  /* #main-row {
+    height: 10rem;
+  } */
+
+  .table {
+    width: 100%;
+  }
+
+  .con1 {
+    margin-bottom: 10rem;
+    /* height: 20rem; */
+  }
+
+  #main-nfl {
+    margin-top: 40rem;
+  }
+
+  #body-nfl {
+    height: 100rem;
+  }
+
+  #main-nba {
+    margin-top: 40rem;
+  }
+
+  #body-nba {
+    height: 100rem;
+  }
+
+  .predict {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .select {
+    width: 50%;
+    margin-left: 5rem;
+    margin-top: 1rem;
+    text-align: center;
+  }
+
+  .btn-mlb {
+    margin-left: 8rem;
+    margin-top: 1rem;
+  }
+
+  .con2 {
+    margin-bottom: 8rem;
+  }
+
+  .nfl-col {
+    width: 100%;
+  }
+
+  .select-nfl {
+    width: 50%;
+    margin-left: 7rem;
+    margin-top: 1rem;
+  }
+
+  .btn-nfl {
+    margin-left: 9.5rem;
+    margin-top: 1rem;
+  }
+
+  /* .table2 {
+    margin-right: 8px;
+  } */
+
+  .blog-row {
+    height: 3000px;
+  }
+
+  .main-text {
+    margin-left: 1.5rem;
+  }
+
+  .footer {
+    height: 15rem;
+    background-color: #21bdb4;
+  }
+}
+
+@media only screen and (max-width: 399px) {
+  .animated-img {
+    height: 20rem;
+    display: flex;
+    align-items: center;
+  }
+
+  #main-section {
+    height: 89vh;
+  }
+
+  /* #main-row {
+    height: 10rem;
+  } */
+
+  .con1 {
+    margin-bottom: 10rem;
+  }
+
+  #main-nfl {
+    margin-top: 40rem;
+  }
+
+  #body-nfl {
+    height: 100rem;
+  }
+
+  #main-nba {
+    margin-top: 40rem;
+  }
+
+  #body-nba {
+    height: 100rem;
+  }
+
+  /* .para {
+    text-align: center;
+  } */
+
+  .predict {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .select {
+    width: 50%;
+    margin-left: 4rem;
+    margin-top: 1rem;
+    text-align: center;
+  }
+
+  .btn-mlb {
+    margin-left: 6.5rem;
+    margin-top: 1rem;
+  }
+
+  .con2 {
+    margin-bottom: 8rem;
+  }
+
+  .nfl-col {
+    width: 100%;
+  }
+
+  .select-nfl {
+    width: 50%;
+    margin-left: 7rem;
+    margin-top: 1rem;
+  }
+
+  .btn-nfl {
+    margin-left: 9.5rem;
+    margin-top: 1rem;
+  }
+
+  .blog-row {
+    height: 3000px;
+  }
+
+  .main-text {
+    margin-left: 1.5rem;
+  }
+
+  .footer {
+    height: 17rem;
+    background-color: #21bdb4;
+  }
+}

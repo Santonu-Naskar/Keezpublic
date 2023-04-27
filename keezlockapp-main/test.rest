@@ -1,0 +1,8 @@
+POST http://localhost:3000/newBlog 
+content-type: application/json
+
+{
+    "head": "testHead",
+    "body": "testBody",
+    "imgLink": "testImgLink"
+}

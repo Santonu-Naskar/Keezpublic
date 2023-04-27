@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>iPredict</title>
+    <link rel="icon" href="/b1.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="/style.css">
+    <script>
+
+    </script>
+</head>
+
+<body style="background: url('bg.jpg'); background-repeat: no-repeat;  background-size: cover;" id="body-nfl">
+
+
+    <div class="container-fluid con2">
+        <div class="row">
+            <div class="col-10 mx-auto">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                        <a class="navbar-brand fs-4 fw-bold" href="/">iPredict</a>
+                        <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/console">Home</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/mlb">MLB</a>
+                                </li>
+
+                                <!-- <li class="nav-item">
+                                    <a class="nav-link" href="/nfl">NFL</a>
+                                </li> -->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/ncaa">NCAA</a>
+                                </li>
+                                <!-- <li class="nav-item">
+                                    <a class="nav-link" href="/nba">NBA</a>
+                                </li> -->
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/daily">Daily Plays</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/tracker">Tracker</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/contact">Contact</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/blog">Blog</a>
+                                </li>
+
+                                <li class="nav-item px-2">
+                                    <a href="/logout"><button class="btn btn-outline-info rounded-3 fw-semibold">Log
+                                            Out</button></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <section class="main d-flex align-items-center" style="height: 42rem;">
+        <div class="container-fluid" id="main-nfl">
+            <div class="row">
+                <div class="col-10 mx-auto nfl-col">
+                    <div class="row nfl-r">
+                        <div class="col-md-6 d-flex justify-content-center flex-column">
+                            <div class="d-flex justify-content-evenly predict">
+                                <div class="select-nfl">
+                                    <p class="fs-5 fw-semibold text-white para">Away</p>
+                                    <select class="form-select" aria-label="Default select example"
+                                        style="width: 10rem;" id="select1">
+
+                                        <option value="1">Houston</option>
+                                        <option value="2">Dallas</option>
+                                        <option value="3">Pittsburgh</option>
+                                        <option value="4">Buffalo</option>
+                                        <option value="5">NYJets</option>
+                                        <option value="6">Carolina</option>
+                                        <option value="7">Jacksonville</option>
+                                        <option value="8">Arizona</option>
+                                        <option value="9">Tennessee</option>
+                                        <option value="10">LAChargers</option>
+                                        <option value="11">Washington</option>
+                                        <option value="12">Philadelphia</option>
+                                        <option value="13">Atlanta</option>
+                                        <option value="14">Seattle</option>
+                                        <option value="15">Indianapolis</option>
+                                        <option value="16">Minnesota</option>
+                                        <option value="17">Cincinnati</option>
+                                        <option value="18">SanFrancisco</option>
+                                        <option value="19">Detroit</option>
+                                        <option value="20">Cleveland</option>
+                                        <option value="21">KansasCity</option>
+                                        <option value="22">Miami</option>
+                                        <option value="23">NewEngland</option>
+                                        <option value="24">Denver</option>
+                                        <option value="25">NYGiants</option>
+                                        <option value="26">Chicago</option>
+                                        <option value="27">LARams</option>
+                                        <option value="28">GreenBay</option>
+                                        <option value="29">NewOrleans</option>
+                                        <option value="30">Baltimore</option>
+                                        <option value="31">LasVegas</option>
+                                        <option value="32">TampaBay</option>
+                                    </select>
+                                </div>
+
+                                <div class="select-nfl">
+                                    <p class="fs-5 fw-semibold text-white para">Home</p>
+                                    <select class="form-select" aria-label="Default select example"
+                                        style="width: 10rem;" id="select2">
+                                        <option value="1">Houston</option>
+                                        <option value="2">Dallas</option>
+                                        <option value="3">Pittsburgh</option>
+                                        <option value="4">Buffalo</option>
+                                        <option value="5">NYJets</option>
+                                        <option value="6">Carolina</option>
+                                        <option value="7">Jacksonville</option>
+                                        <option value="8">Arizona</option>
+                                        <option value="9">Tennessee</option>
+                                        <option value="10">LAChargers</option>
+                                        <option value="11">Washington</option>
+                                        <option value="12">Philadelphia</option>
+                                        <option value="13">Atlanta</option>
+                                        <option value="14">Seattle</option>
+                                        <option value="15">Indianapolis</option>
+                                        <option value="16">Minnesota</option>
+                                        <option value="17">Cincinnati</option>
+                                        <option value="18">SanFrancisco</option>
+                                        <option value="19">Detroit</option>
+                                        <option value="20">Cleveland</option>
+                                        <option value="21">KansasCity</option>
+                                        <option value="22">Miami</option>
+                                        <option value="23">NewEngland</option>
+                                        <option value="24">Denver</option>
+                                        <option value="25">NYGiants</option>
+                                        <option value="26">Chicago</option>
+                                        <option value="27">LARams</option>
+                                        <option value="28">GreenBay</option>
+                                        <option value="29">NewOrleans</option>
+                                        <option value="30">Baltimore</option>
+                                        <option value="31">LasVegas</option>
+                                        <option value="32">TampaBay</option>
+                                    </select>
+                                </div>
+                                <div class="d-flex align-items-end btn-nfl">
+                                    <button class="btn btn-info text-white rounded-5 fw-semibold" onclick="predict()"
+                                        id="sohan">Predict</button>
+                                </div>
+                            </div>
+                            <div class="my-5">
+
+                                <p class="fs-5 fw-semibold text-center text-white">
+                                    Enter Values
+                                </p>
+
+                                <table class="table table-light table-striped table-hover">
+                                    <!-- <thead class="">
+                                        <tr class="text-white">
+                                            <th scope="col">Prediction Table</th>
+
+                                        </tr>
+                                    </thead> -->
+                                    <thead>
+                                        <tr class="text-center">
+                                            <th scope="col"></th>
+                                            <th scope="col"></th>
+                                            <th scope="col">Away</th>
+                                            <th scope="col">Home</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+
+                                        <tr class="">
+
+                                            <td>Point spread</td>
+                                            <td></td>
+                                            <td><input type="text" class="form-control" id="ps1" placeholder=""></td>
+                                            <td><input type="text" class="form-control" id="ps2" placeholder=""></td>
+
+                                        </tr>
+                                        <tr class="">
+
+                                            <td>Over Under</td>
+                                            <td></td>
+                                            <td><input type="text" class="form-control" id="ou1" placeholder=""></td>
+                                            <td><input type="text" class="form-control" id="ou2" placeholder=""></td>
+
+                                        </tr>
+                                        <tr class="">
+
+                                            <td>Projected score</td>
+                                            <td></td>
+                                            <td><input type="text" class="form-control" id="pjs1" placeholder=""></td>
+                                            <td><input type="text" class="form-control" id="pjs2" placeholder=""></td>
+
+                                    </tbody>
+                                </table>
+                                <div class="text-center">
+                                    <p class="text-white fw-semibold" style="display: none;" id="error">Error...</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-6">
+                            <div class="mx-1">
+                                <div class="mt-4">
+                                    <p class="fs-5 fw-semibold text-center text-white">
+                                        Prediction Table
+                                    </p>
+                                </div>
+                                <table class="table table2 table-light table-striped table-hover">
+                                    <!-- <thead class="">
+                                        <tr class="text-white">
+                                            <th scope="col">Prediction Table</th>
+
+                                        </tr>
+                                    </thead> -->
+                                    <thead>
+                                        <tr>
+                                            <th scope="col"></th>
+                                            <th scope="col"></th>
+                                            <th scope="col">Away</th>
+                                            <th scope="col">Home</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="">
+
+                                            <td>Standard deviation</td>
+                                            <td id="a"></td>
+                                            <td id="a1"></td>
+                                            <td id="b1"></td>
+
+                                        </tr>
+                                        <tr class="">
+
+                                            <td>Team Rankings</td>
+                                            <td id="b"></td>
+                                            <td id="a2"></td>
+                                            <td id="b2"></td>
+
+                                        </tr>
+                                        <tr class="">
+
+                                            <td>Point spread</td>
+                                            <td id="c"></td>
+                                            <td id="a3"></td>
+                                            <td id="b3"></td>
+
+                                        </tr>
+                                        <tr class="">
+
+                                            <td>Over Under</td>
+                                            <td id="d"></td>
+                                            <td id="a4"></td>
+                                            <td id="b4"></td>
+
+                                        </tr>
+                                        <tr class="">
+
+                                            <td>Projected score</td>
+                                            <td id="e"></td>
+                                            <td id="a5"></td>
+                                            <td id="b5"></td>
+
+                                        </tr>
+                                        <tr class="">
+
+                                            <td>Wins</td>
+                                            <td id="f"></td>
+                                            <td id="a6"></td>
+                                            <td id="b6"></td>
+
+                                        </tr>
+                                        <tr class="">
+
+                                            <td>Win Percentage</td>
+                                            <td id="g"></td>
+                                            <td id="a7"></td>
+                                            <td id="b7"></td>
+
+                                        </tr>
+                                        <tr class="">
+
+                                            <td>Wins Spread</td>
+                                            <td id="h"></td>
+                                            <td id="a8"></td>
+                                            <td id="b8"></td>
+
+                                        </tr>
+                                        <tr class="">
+
+                                            <td>Win Spread %</td>
+                                            <td id="i"></td>
+                                            <td id="a9"></td>
+                                            <td id="b9"></td>
+
+                                        </tr>
+                                        <tr class="">
+
+                                            <td>Over</td>
+                                            <td id="j"></td>
+                                            <td id="a10"></td>
+                                            <td id="b10"></td>
+
+
+                                        </tr>
+                                        <tr class="">
+
+                                            <td>Under</td>
+                                            <td id="k"></td>
+                                            <td id="a11"></td>
+                                            <td id="b11"></td>
+
+
+                                        </tr>
+                                        <tr class="">
+
+                                            <td>High</td>
+                                            <td id="l"></td>
+                                            <td id="a12"></td>
+                                            <td id="b12"></td>
+
+
+                                        </tr>
+                                        <tr class="">
+
+                                            <td>Low</td>
+                                            <td id="a"></td>
+                                            <td id="a13"></td>
+                                            <td id="b13"></td>
+
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+    <script>
+        function predict() {
+            document.getElementById("error").style.display = "none";
+            var e1 = document.getElementById("select1");
+            var value1 = e1.value;
+            var away = e1.options[e1.selectedIndex].text;
+
+
+            var e2 = document.getElementById("select2");
+            var value2 = e2.value;
+            var home = e2.options[e2.selectedIndex].text;
+
+
+
+
+            let away_point_spread = document.getElementById("ps1").value
+            let away_over_under = document.getElementById("ou1").value
+            let away_projected_score = document.getElementById("pjs1").value
+            let home_point_spread = document.getElementById("ps2").value
+            let home_over_under = document.getElementById("ou2").value
+            let home_projected_score = document.getElementById("pjs2").value
+
+            if (away_point_spread == '' || away_projected_score == '' || away_over_under == '' || home_over_under == '' || home_point_spread == '' || home_projected_score == '') {
+                document.getElementById("error").innerHTML = "Please enter all the fields !!! ";
+                document.getElementById("error").style.display = "block";
+                return;
+            }
+            document.getElementById("sohan").innerHTML = "Predicting..."
+
+
+            fetch("/nfl", { method: "POST", headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ away, home, away_over_under, away_point_spread, away_projected_score, home_over_under, home_point_spread, home_projected_score }) }).then((res) => {
+                return res.json();
+            }).then((fres) => {
+                if (fres.code == 404) {
+                    alert("Some Error Occured !!!")
+                }
+                else {
+                    document.getElementById("sohan").innerHTML = "Predict"
+                    let a = JSON.parse(fres.message).a[0]
+                    let b = JSON.parse(fres.message).b[0]
+
+
+                    for (let i = 0; i < 13; i++) {
+                        document.getElementById("a" + (i + 1).toString()).innerHTML = a[i]
+                        document.getElementById("b" + (i + 1).toString()).innerHTML = b[i]
+                    }
+
+                }
+            })
+
+
+
+        }
+        document.getElementById("sohan").innerHTML = "Predict"
+    </script>
+</body>
+
+</html>

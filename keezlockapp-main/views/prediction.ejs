@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>iPredict</title>
+    <link rel="icon" href="/b1.jpg">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-10 mx-auto">
+          <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <a class="navbar-brand fs-4 fw-bold" href="/">iPredict</a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="/">Home</a>
+                  </li>
+                 
+                  <li class="nav-item">
+                    <a class="nav-link" href="/mlb">MLB</a>
+                </li>
+
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="/nfl">NFL</a>
+                </li> -->
+                <li class="nav-item">
+                  <a class="nav-link" href="/ncaa">NCAA</a>
+              </li>
+                <!-- <li class="nav-item">
+                  <a class="nav-link" href="/nba">NBA</a>
+              </li> -->
+              <li class="nav-item">
+                <a class="nav-link" href="/daily">Daily Plays</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/tracker">Tracker</a>
+          </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="/contact">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/blog">Blog</a>
+                  </li>
+                  
+<li class="nav-item px-2">
+  <a href="/logout"><button class="btn btn-outline-info rounded-3 fw-semibold">Log Out</button></a> 
+ </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <section class="main d-flex align-items-center">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-10 mx-auto">
+            <div class="row">
+              <div class="col-md-6 d-flex justify-content-center flex-column">
+                <!-- <h2 class="fw-semibold text-white">
+                  Predict Score of Major League
+                  <strong class="tech fw-bold"
+                    ><br />
+                    Baseball Games</strong
+                  >
+                </h2>
+                <h3 class="my-3 text-white">
+                  <div class="typing-demo">Hit, Run, Score!</div>
+                </h3>
+                <div class="mt-2">
+                  <button
+                    type="button"
+                    class="btn rounded-5 shadow-lg text-info border-info fw-semibold"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                  >
+                    Get Started
+                  </button>
+                </div> -->
+                <div
+                  class="card"
+                  style="width: 20rem; background-color: rgba(0, 0, 0, 0)"
+                >
+                  <img
+                    src="baseball.svg"
+                    class="card-img-top img-fluid"
+                    alt="..."
+                    height=""
+                  />
+                  <ul class="list-group list-group-flush rounded-2">
+                    <li class="list-group-item fw-semibold" id="a">
+                      Away Expected Runs: 
+                    </li>
+                    <li class="list-group-item fw-semibold" id="b">
+                    Home Expected Runs: 
+                    </li>
+                  </ul>
+                  <div class="mt-3 text-center">
+                    <a href="/">
+                      <button
+                        class="btn rounded-5 shadow-lg text-info border-info fw-semibold"
+                      >
+                        Predict Again
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <img src="https://user-images.githubusercontent.com/52379890/190837957-428acc68-0454-4e07-9ff6-699310f352e3.png" class="img-fluid animated" alt="home" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <img src="wave.svg" alt="myPic" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      window.onload = function()
+      {
+          var message = JSON.parse(localStorage.getItem("prediction"))
+          document.getElementById("a").innerHTML = " Away Expected Runs: "+ message.a;
+          document.getElementById("b").innerHTML = " Home Expected Runs: "+ message.b;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,363 @@
+Gonzaga
+Toledo
+Alabama
+Arizona
+Oral Roberts
+Xavier
+Tulane
+Youngs St
+Cornell
+Marshall
+UAB
+Col Charlestn
+Marquette
+New Mexico
+Missouri
+Iowa
+Furman
+Memphis
+Texas
+Miami (FL)
+S Utah
+Wright State
+Providence
+NC State
+Baylor
+Wake Forest
+Connecticut
+Indiana St
+Utah State
+Colgate
+N Carolina
+Bryant
+James Mad
+TX A&M-CC
+Ohio
+Queens
+Pepperdine
+TN Martin
+Santa Clara
+San Diego
+Kansas
+Samford
+Detroit
+Rice
+Fla Atlantic
+St Johns
+Pacific
+TX Christian
+F Dickinson
+Creighton
+Cincinnati
+W Virginia
+LA Lafayette
+Mass Lowell
+S Indiana
+Buffalo
+Portland
+Indiana
+Houston
+Princeton
+SE Missouri
+Hsn Christian
+Lg Beach St
+Kansas St
+Geo Wshgtn
+Bowling Grn
+Iona
+E Washingtn
+San Francisco
+Belmont
+Loyola Mymt
+Pittsburgh
+Illinois
+Saint Louis
+SE Louisiana
+Duquesne
+Utah Val St
+VA Tech
+Ball State
+N Florida
+NW State
+TN State
+TX-Pan Am
+Clemson
+AR Lit Rock
+Texas A&M
+Kentucky
+Maryland BC
+WI-Milwkee
+Chattanooga
+Drake
+Kent State
+Arkansas
+U Penn
+Stetson
+UCLA
+Norfolk St
+Texas Tech
+UC Irvine
+Syracuse
+Kennesaw St
+Ste F Austin
+Yale
+Lipscomb
+BYU
+Purdue
+Michigan
+N Alabama
+S Mississippi
+UNLV
+Penn State
+Portland St
+UC Davis
+St. Thomas
+Hofstra
+Ohio State
+S Florida
+Utah Tech
+S Car State
+Howard
+Nicholls St
+Oakland
+Coppin State
+USC
+E Michigan
+San Diego St
+NC-Asheville
+E Kentucky
+N Colorado
+High Point
+SIU Edward
+Auburn
+Nevada
+Liberty
+Akron
+Central Ark
+St Josephs
+Quinnipiac
+Central FL
+Fordham
+Abl Christian
+Wofford
+N Dakota St
+Colorado St
+Denver
+W Kentucky
+Miami (OH)
+Winthrop
+Tennessee
+Towson
+Duke
+Florida
+LA Tech
+DePaul
+Boise State
+Middle Tenn
+Southern
+St Fran (PA)
+N Mex State
+Vanderbilt
+New Orleans
+Idaho
+Army
+St Marys
+U Mass
+Grd Canyon
+Longwood
+W Illinois
+TN Tech
+Vermont
+UC Riverside
+Cleveland St
+W Carolina
+Georgetown
+Colorado
+IPFW
+Arizona St
+S Dakota St
+NC Central
+Oregon
+S Methodist
+Bradley
+Maryland
+Sacred Hrt
+Florida Intl
+N Illinois
+Seattle
+Charl South
+Fla Gulf Cst
+Notre Dame
+NC-Grnsboro
+Coastal Car
+N Arizona
+Wichita St
+Davidson
+Rider
+VCU
+Utah
+UCSB
+E Carolina
+Montana St
+Geo Mason
+Rutgers
+Temple
+Oklahoma St
+Richmond
+Florida St
+Navy
+Murray St
+Iowa State
+S Alabama
+Villanova
+Georgia
+Canisius
+North Dakota
+La Salle
+Delaware
+Sam Hous St
+Troy
+Stanford
+Alab A&M
+Siena
+Virginia
+TX A&M-Com
+Morgan St
+Dayton
+N Iowa
+Washington
+Montana
+Brown
+W Michigan
+Valparaiso
+Northwestern
+Oklahoma
+Wyoming
+Radford
+Lehigh
+Idaho State
+E Tenn St
+Incar Word
+NC A&T
+Michigan St
+Binghamton
+Harvard
+CS Fullerton
+TX-San Ant
+Jackson St
+Neb Omaha
+Seton Hall
+Dartmouth
+Old Dominion
+San Jose St
+Alcorn State
+Cal Baptist
+Air Force
+Wash State
+Citadel
+TX Southern
+South Dakota
+Manhattan
+Gard-Webb
+GA Southern
+SC Upstate
+Campbell
+Mississippi
+E Illinois
+Maine
+Hawaii
+Illinois St
+Nebraska
+Grambling St
+Stonehill
+NC-Wilmgton
+Hampton
+St Bonavent
+Loyola-Chi
+Beth-Cook
+NJIT
+GA Tech
+Maryland ES
+Tulsa
+Rob Morris
+IL-Chicago
+LSU
+Morehead St
+Boston Col
+Chicago St
+TX El Paso
+Central Conn
+McNeese St
+Tarleton State
+Mercer
+N Kentucky
+Bucknell
+Lamar
+Northeastrn
+Boston U
+Albany
+Sac State
+Charlotte
+UC San Diego
+Butler
+Miss State
+Drexel
+Prairie View
+Rhode Island
+American
+App State
+Ark Pine Bl
+Central Mich
+Lindenwood
+S Illinois
+Georgia St
+Holy Cross
+Jksnville St
+Weber State
+N Hampshire
+S Carolina
+Elon
+Columbia
+Wm & Mary
+VA Military
+Wisconsin
+Missouri St
+Louisville
+Texas State
+UMKC
+North Texas
+IUPUI
+Fairfield
+Loyola-MD
+Austin Peay
+LIU
+Alabama St
+Mt St Marys
+Niagara
+LA Monroe
+Bellarmine
+Arkansas St
+Evansville
+Marist
+Delaware St
+Presbyterian
+St Fran (NY)
+TX-Arlington
+Wagner
+Stony Brook
+Jacksonville
+Minnesota
+Lafayette
+Fresno St
+Cal St Nrdge
+Miss Val St
+Monmouth
+CS Bakersfld
+Oregon St
+St Peters
+Hartford
+Merrimack
+WI-Grn Bay
+California
+Cal Poly
+Florida A&M

@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>iPredict</title>
+    <link rel="icon" href="/b1.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/style.css" />
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-10 mx-auto">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                        <a class="navbar-brand fs-4 fw-bold" href="/">iPredict</a>
+                        <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/console">Home</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/mlb">MLB</a>
+                                </li>
+
+                                <!-- <li class="nav-item">
+                                    <a class="nav-link" href="/nfl">NFL</a>
+                                </li> -->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/ncaa">NCAA</a>
+                                </li>
+                                <!-- <li class="nav-item">
+                                    <a class="nav-link" href="/nba">NBA</a>
+                                </li> -->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/daily">Daily Plays</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/tracker">Tracker</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/contact">Contact</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/blog">Blog</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <section class="main d-flex align-items-center">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-10 mx-auto">
+                    <div class="row">
+                        <div class="col-md-6 d-flex justify-content-center flex-column">
+                            <h2 class="fw-semibold text-white">
+                                Predict Scores of Major League
+                                <strong class="tech fw-bold"><br />
+                                    Baseball Games</strong>
+                            </h2>
+                            <h3 class="my-3 text-white">
+                                <div class="typing-demo">Hit, Run, Score!</div>
+                            </h3>
+                            <div class="m-2">
+                                <button type="button" class="btn rounded-5 shadow-lg text-info border-info fw-semibold"
+                                    data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    Sign Up
+                                </button>
+
+                                <button type="button"
+                                    class="btn rounded-5 shadow-lg text-info border-info fw-semibold mx-2"
+                                    data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                                    Log In
+                                </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title fw-bold text-secondary" id="exampleModalLabel">
+                                                    Sign Up Here
+                                                    <a href=""> </a>
+                                                </h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+
+                                                <form action="">
+                                                    <div class="form-group m-2">
+                                                        <label for="exampleInputEmail1" class="fw-semibold">First
+                                                            Name</label>
+                                                        <input type="text" class="form-control" id="fname1"
+                                                            aria-describedby="emailHelp" placeholder="Enter first name"
+                                                            required>
+
+                                                    </div>
+                                                    <div class="form-group m-2">
+                                                        <label for="exampleInputEmail1" class="fw-semibold">Last
+                                                            Name</label>
+                                                        <input type="text" class="form-control" id="lname1"
+                                                            aria-describedby="emailHelp" placeholder="Enter last name"
+                                                            required>
+
+                                                    </div>
+                                                    <div class="form-group m-2">
+                                                        <label for="exampleInputEmail1" class="fw-semibold">Email
+                                                            address</label>
+                                                        <input type="email" class="form-control" id="email1"
+                                                            aria-describedby="emailHelp" placeholder="Enter email"
+                                                            required>
+
+                                                    </div>
+                                                    <div class="form-group m-2">
+                                                        <label for="exampleInputPassword1"
+                                                            class="fw-semibold">Password</label>
+                                                        <input type="password" class="form-control" id="password1"
+                                                            placeholder="Enter password" required>
+                                                    </div>
+                                                    <div class="form-group m-2">
+                                                        <label for="exampleInputPassword1" class="fw-semibold">Confirm
+                                                            Password</label>
+                                                        <input type="password" class="form-control" id="cpassword1"
+                                                            placeholder="Confirm password" required>
+                                                    </div>
+
+
+                                            </div>
+                                            <div class="">
+                                                <p class="fw-semibold text-danger text-center" style="display: none;"
+                                                    id="error1">Error message</p>
+                                            </div>
+                                            <div class="modal-footer my-2">
+                                                <button type="button" class="btn btn-primary" onclick="signup()">
+                                                    Sign Up
+                                                </button>
+                                            </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="modal fade" id="exampleModal1" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title fw-bold text-secondary" id="exampleModalLabel">
+                                                    Log In Here
+                                                    <a href=""> </a>
+                                                </h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+
+                                                <form>
+
+                                                    <div class="form-group m-2">
+                                                        <label for="exampleInputEmail1" class="fw-semibold">Email
+                                                            address</label>
+                                                        <input type="email" class="form-control" id="email2"
+                                                            aria-describedby="emailHelp" placeholder="Enter email"
+                                                            required>
+
+                                                    </div>
+                                                    <div class="form-group m-2">
+                                                        <label for="exampleInputPassword1"
+                                                            class="fw-semibold">Password</label>
+                                                        <input type="password" class="form-control" id="password2"
+                                                            placeholder="Enter password" required>
+                                                    </div>
+
+
+                                            </div>
+                                            <div class="">
+                                                <p class="fw-semibold text-danger text-center" style="display: none;"
+                                                    id="error2">Error message</p>
+                                            </div>
+                                            <div class="modal-footer my-2">
+                                                <button type="button" class="btn btn-primary" onclick="login()">
+                                                    Log In
+                                                </button>
+                                            </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="animated-img col-md-6">
+                            <img src="b1.PNG" class="img-fluid animated w-75" alt="home" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <img src="wave.svg" alt="myPic" />
+    <div class="footer d-flex justify-content-center">
+        <div style="height: 9rem; width: 100%; background-color: #21bdb4; border: none; text-align: center;">
+            <h5 class=" text-center fw-semibold p-2" style="color: white;">Disclaimer</h5>
+            <p class="p-2" style="color: white;"><strong>We are a sports information service that delivers valuable
+                    information
+                    and predictions about the outcomes of sporting
+                    events.
+                    Keez Consulting, LLC. is NOT a gambling website. Keez Consulting, LLC.. does not take or place any
+                    bets/wagers, NOR is
+                    this a gambling website. Keez Consulting, LLC.. does NOT facilitate or promote gambling in any
+                    form.</strong></p>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+    <script>
+        function showError1(message) {
+            document.getElementById("error1").style.color = "red"
+            document.getElementById("error1").innerHTML = message
+            document.getElementById("error1").style.display = "block"
+
+        }
+        function showSuccess1(message) {
+            document.getElementById("error1").style.color = "green"
+            document.getElementById("error1").innerHTML = message
+            document.getElementById("error1").style.display = "block"
+
+        }
+        function showError2(message) {
+            document.getElementById("error2").style.color = "red"
+            document.getElementById("error2").innerHTML = message
+            document.getElementById("error2").style.display = "block"
+
+        }
+        function showSuccess2(message) {
+            document.getElementById("error2").style.color = "green"
+            document.getElementById("error2").innerHTML = message
+            document.getElementById("error2").style.display = "block"
+
+        }
+        function signup() {
+            document.getElementById("error1").style.display = "none"
+            let fname = document.getElementById("fname1").value
+            let lname = document.getElementById("lname1").value
+            let email = document.getElementById("email1").value
+            let password = document.getElementById("password1").value
+            let cpassword = document.getElementById("cpassword1").value
+            if (fname == '' || lname == "" || email == "" || password == "" || cpassword == "") {
+                showError1("Please enter all the fields")
+                return
+            }
+            if (cpassword != password) {
+                showError1("Both passwords are not matching")
+                return;
+            }
+            fetch("/signup", { method: "POST", headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ fname, lname, email, password }) }).then((res) => {
+                return res.json()
+            }).then((fres) => {
+                if (fres.code == 200) {
+                    showSuccess1("Signup Successful, Please login");
+                    setTimeout(() => {
+                        window.location.href = "/console"
+                    }, 3000)
+                }
+                else {
+                    showError1(fres.message)
+                }
+            })
+        }
+
+        function login() {
+            let email = document.getElementById("email2").value
+            let password = document.getElementById("password2").value
+            if (email == "" || password == "") {
+                showError2("Please enter all the fields")
+                return;
+            }
+
+            fetch("/login", { method: "POST", headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ email, password }) }).then((res) => {
+                return res.json()
+            }).then((fres) => {
+                console.log(fres)
+                if (fres.code == 200) {
+                    showSuccess2("Login Successful, Redirecting...");
+                    setTimeout(() => {
+                        window.location.href = "/console"
+                    }, 2000)
+                }
+                else {
+                    showError2(fres.message)
+                }
+            })
+        }
+
+    </script>
+</body>
+
+</html>
